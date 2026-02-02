@@ -14,9 +14,9 @@ public class AwsApplication {
 		SpringApplication.run(AwsApplication.class, args);
 	}
 
-	@GetMapping("/hello/{msg}")
-	public String hello(@PathVariable String msg) {
-		return "Hello "+msg;
+	@GetMapping("/hello/{message}")
+	public String hello(@PathVariable String message) {
+		return "Hello "+message;
 	}
 
 }
