@@ -12,5 +12,5 @@ phases:
 
 artifacts:
   files:
-    - target/hello-world.jar
+    - target/*.jar
   discard-paths: yes
