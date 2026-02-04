@@ -14,6 +14,16 @@ public class AwsApplication {
 		SpringApplication.run(AwsApplication.class, args);
 	}
 
+	@GetMapping("/")
+	public String home() {
+	    return "App is running";
+	}
+
+	@GetMapping("/health")
+	public String health() {
+	    return "UP";
+	}
+
 	@GetMapping("/hello/{message}")
 	public String hello(@PathVariable String message) {
 		return "Hello "+message;
